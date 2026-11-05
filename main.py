@@ -177,7 +177,7 @@ def main(argv=None):
     p.add_argument("--cmap", default="viridis")
     p.add_argument("--out", help="save figure to this file (e.g. slice.png)")
     args = p.parse_args(argv)
-
+    #github check
     grid = load_mesh(args.mesh)
     print(grid)
 
