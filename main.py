@@ -506,7 +506,7 @@ class SliceApp(tk.Tk):
         # Debounce: redraw ~100 ms after the last change while dragging.
         if self._after_id is not None:
             self.after_cancel(self._after_id)
-        self._after_id = self.after(100, self._refresh)
+        self._after_id = self.after(50, self._refresh)
 
     def _refresh(self):
         """Resample the mesh at the current plane position and redraw."""
