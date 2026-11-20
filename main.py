@@ -38,6 +38,13 @@ from matplotlib.figure import Figure
 import meshio
 import numpy as np
 import pyvista as pv
+# Source - https://stackoverflow.com/a/76429314
+# Posted by Reza_nadimi, modified by community. See post 'Timeline' for change history
+# Retrieved 2026-11-19, License - CC BY-SA 4.0
+
+import sys, io
+buffer = io.StringIO()
+sys.stdout = sys.stderr = buffer
 
 # ----------------------------------------------------------------------------
 # DEFAULTS (used when no command-line arguments are given, e.g. run in PyCharm)
